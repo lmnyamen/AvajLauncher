@@ -4,7 +4,6 @@ import Weather.WeatherTower;
 import Crafts.AircraftFactory;
 import Crafts.LogMessage;
 import javax.imageio.IIOException;
-import java.util.ArrayList;
 import java.io.File;
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -45,7 +44,7 @@ public class Main {
         catch (IIOException | FileNotFoundException e){
             System.out.println(e);
         }
-        catch (ArrayIndexOutOfBoundsException e){
+        catch (ArrayIndexOutOfBoundsException | NullPointerException | NumberFormatException e){
             System.out.print("Invalid input");
 
         }
